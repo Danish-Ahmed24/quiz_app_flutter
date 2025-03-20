@@ -7,8 +7,19 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(74, 0, 147, 1),
-        body: HomePage(),
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomLeft,
+              colors: [
+                const Color.fromARGB(255, 18, 45, 220),
+                const Color.fromARGB(255, 152, 91, 218),
+              ],
+            ),
+          ),
+          child: HomePage(),
+        ),
       ),
     ),
   );

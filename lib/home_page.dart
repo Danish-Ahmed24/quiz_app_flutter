@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
-            width: 250,
+            width: 300,
           ),
           SizedBox(height: 30),
           Text(
@@ -21,22 +21,14 @@ class HomePage extends StatelessWidget {
               fontSize: 25,
             ),
           ),
-          ElevatedButton(
+          OutlinedButton.icon(
             onPressed: () {},
-            style: ElevatedButton.styleFrom(
+            style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
-              backgroundColor: Color.fromRGBO(
-                86,
-                0,
-                156,
-                1,
-              ),
-              textStyle: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 17,
-              ),
+              textStyle: TextStyle(fontSize: 18),
             ),
-            child: Text("Start Quiz"),
+            icon: Icon(Icons.arrow_right_alt, size: 30),
+            label: Text("Start Quiz"),
           ),
         ],
       ),
