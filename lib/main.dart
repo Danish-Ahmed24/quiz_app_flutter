@@ -4,5 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/home_page.dart';
 
 void main() {
-  runApp(MaterialApp(home: HomePage()));
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color.fromRGBO(74, 0, 147, 1),
+        body: HomePage(),
+      ),
+    ),
+  );
 }
